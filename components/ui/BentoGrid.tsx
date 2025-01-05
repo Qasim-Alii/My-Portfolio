@@ -12,9 +12,15 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 import dynamic from "next/dynamic";
 
-const BackgroundGradientAnimation = dynamic(() => import("./GradientBg"), {
-  ssr: false,
-});
+const BackgroundGradientAnimation = dynamic(
+  () =>
+    import("./GradientBg") as unknown as Promise<{
+      default: React.ComponentType<any>;
+    }>,
+  {
+    ssr: false,
+  }
+);
 
 export const BentoGrid = ({
   className,
