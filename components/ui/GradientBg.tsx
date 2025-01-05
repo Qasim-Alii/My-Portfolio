@@ -42,7 +42,9 @@ export const BackgroundGradientAnimation = ({
   const [tgY, setTgY] = useState(0);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window === "undefined") {
+      console.log("chalgayi");
+    } else {
       document.body.style.setProperty(
         "--gradient-background-start",
         gradientBackgroundStart
