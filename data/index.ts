@@ -114,6 +114,7 @@ export const testimonials = [
   {
     quote:
       "The project demanded seamless integration between the frontend and backend, and the results were beyond expectations. The application is responsive, efficient, and handles heavy traffic effortlessly. Truly professional work!",
+    name: "Jhon Doe",
     title: "CTO of AMZ Geeks",
   },
   {
